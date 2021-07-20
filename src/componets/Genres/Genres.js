@@ -56,6 +56,7 @@ const Genres = ({
       ))}
       {genres.map(genre => (
         <Chip
+          className='Unselected-Chip'
           style={{ margin: 2 }}
           label={genre.name}
           key={genre.id}

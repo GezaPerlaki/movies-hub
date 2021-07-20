@@ -1,3 +1,7 @@
 .genresDivStyle {
   padding: 6px 0;
 }
+
+.Unselected-Chip {
+  background: rgb(25, 0, 255);
+}
