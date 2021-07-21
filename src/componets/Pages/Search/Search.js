@@ -38,7 +38,6 @@ const Search = () => {
       );
       setContent(data.results);
       setNumOfPages(data.total_pages);
-      // console.log(data);
     } catch (error) {
       console.error(error);
     }
@@ -60,6 +59,9 @@ const Search = () => {
             label='Search'
             variant='filled'
             onChange={e => setSearchText(e.target.value)}
+            onKeyPress={e =>
+              (e.key === 'Enter' || e.key === 'NumpadEnter') && fetchSearch()
+            }
           />
           <Button
             onClick={fetchSearch}
