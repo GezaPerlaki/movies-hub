@@ -1,5 +1,5 @@
 import { Container } from '@material-ui/core';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './componets/Header/Header';
 import SimpleBottomNavigation from './componets/Navbar/MainNav';
@@ -10,7 +10,7 @@ import Search from './componets/Pages/Search/Search';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <div className='app'>
         <Container>
@@ -23,7 +23,7 @@ function App() {
         </Container>
       </div>
       <SimpleBottomNavigation />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
