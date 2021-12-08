@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     bottom: 0,
     backgroundColor: '#222140',
     zIndex: 100,
+    opacity: 0.9,
   },
 });
 
